@@ -1,4 +1,7 @@
+import 'package:bholderapp/src/widgets/LoginForm.dart';
+import 'package:bholderapp/src/widgets/Logo.dart';
 import 'package:flutter/material.dart';
+import '../contansts/colors.dart' show ColorsBholder;
 
 class Login extends StatefulWidget {
   Login({Key key, this.title}) : super(key: key);
@@ -28,7 +31,7 @@ class _LoginState extends State<Login> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return Scaffold(
-        backgroundColor: Color.fromRGBO(88, 33, 38, 1),
+        backgroundColor: ColorsBholder.blue,
         // appBar: AppBar(
         //     // Here we take the value from the Login object that was created by
         //     // the App.build method, and use it to set our appbar title.
@@ -53,6 +56,8 @@ class _LoginState extends State<Login> {
               // center the children vertically; the main axis here is the vertical
               // axis because Columns are vertical (the cross axis would be
               // horizontal).
+
+              children: <Widget>[Logo(), LoginForm()],
               mainAxisAlignment: MainAxisAlignment.center,
             ),
           ),
