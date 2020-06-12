@@ -1,3 +1,4 @@
+import 'package:bholderapp/src/pages/ListProfiles.dart';
 import 'package:flutter/material.dart';
 import './src/pages/Login.dart';
 
@@ -22,10 +23,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.red,
       ),
       home: Login(title: 'Bholder - Login'),
-
-      // routes: <String, WidgetBuilder>{
-      //   '/HomeLoged': (BuildContext context) => HomePage()
-      // },
+      routes: <String, WidgetBuilder>{
+        '/list-profiles': (BuildContext context) => ListProfiles()
+      },
     );
   }
 }

@@ -1,0 +1,47 @@
+{
+  "profiles": [
+    {
+      "name": "Christian Alexsander",
+      "birthday": "13/06/1999",
+      "thumb": "https://firebasestorage.googleapis.com/v0/b/bholderapp.appspot.com/o/chris-profile.jpg?alt=media&token=d781a4db-0617-4113-8ec1-065f0911b8ae",
+      "description": "Desenvolvedor, cursando sistemas da informação, focado no desenvolvimento de sistemas, sempre integrando novas tecnologias.",
+      "skills": [
+        "Git",
+        "HTML5",
+        "Github",
+        "AngularJS",
+        "Ionic Framework",
+        "MySQL",
+        "HTML",
+        "Bootstrap",
+        "WordPress",
+        "Magento",
+        "PHP",
+        "SASS",
+        "jQuery",
+        "MongoDB",
+        "NoSQL",
+        "Python",
+        "SQL",
+        "Manutenção de micros",
+        "Scrum",
+        "Responsive Web Design",
+        "Web Design"
+      ]
+    },
+    {
+      "name": "Victor Teles",
+      "birthday": "13/06/1999",
+      "thumb": "https://firebasestorage.googleapis.com/v0/b/bholderapp.appspot.com/o/vkto-profile.jpg?alt=media&token=cb1cf7ac-e92a-4c72-b81a-a6ad2486cbd6",
+
+      "description": "Carreira desenvolvida na área de Tecnologia da Informação, atualmente no 7° período do curso SI pelo Centro Universitário Una.\nAtuação voltada para desenvolvimento, manutenção e suporte de sistemas tendo como principais tecnologias .Net Core, Angular, Sql Server e Oracle.",
+      "skills": [
+        "Banco de dados Oracle",
+        "SQL",
+        "Microsoft Office",
+        "VB.NET",
+        "TFS"
+      ]
+    }
+  ]
+}

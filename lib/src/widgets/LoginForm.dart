@@ -1,7 +1,7 @@
 import 'dart:developer';
-
 import 'package:bholderapp/src/contansts/colors.dart';
 import 'package:flutter/material.dart';
+import '../services/auth.dart' show FBaseAuth;
 
 class LoginForm extends StatefulWidget {
   @override
@@ -24,6 +24,14 @@ class _LoginFormState extends State<LoginForm> {
     this.setState(() {
       this.passwordVal = pass;
     });
+  }
+
+  Future<void> singInUser() async {
+    final auth = FBaseAuth();
+    final user = await auth.singIn(this.emailVal, this.passwordVal);
+    if (user.uid is String) {
+      Navigator.pushNamed(context, '/list-profiles');
+    }
   }
 
   @override
@@ -74,10 +82,25 @@ class _LoginFormState extends State<LoginForm> {
                   ),
                   onPressed: () {
                     if (_formKey.currentState.validate()) {
-                      log(this.passwordVal);
-                      log(this.emailVal);
+                      singInUser();
                     }
                   },
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 1.0),
+              child: ButtonTheme(
+                minWidth: double.infinity,
+                child: RaisedButton(
+                  color: ColorsBholder.darkBlue,
+                  child: Text(
+                    'Register',
+                    style: TextStyle(
+                      color: ColorsBholder.yellow,
+                    ),
+                  ),
+                  onPressed: () {},
                 ),
               ),
             ),
